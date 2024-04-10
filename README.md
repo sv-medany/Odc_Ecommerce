@@ -1,6 +1,7 @@
 # Odc_Ecommerce
 
-![Orange Digital Center Logo](orange_digital_center_logo.png)
+<img src="https://th.bing.com/th/id/OIP.FUHN9Sp3DDhaXZD9STxBEgHaEK?rs=1&pid=ImgDetMain" alt="Orange Digital Center Logo">
+
 
 ## Overview
 
