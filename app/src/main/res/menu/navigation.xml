@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Shop"
+        android:id="@+id/shop"
+        android:icon="@drawable/vv1"/>
+    <item android:title="Explore"
+        android:id="@+id/exp"
+        android:icon="@drawable/vv2"/>
+    <item android:title="Cart"
+        android:id="@+id/cart"
+        android:icon="@drawable/vv3"/>
+    <item android:title="Favourite"
+        android:id="@+id/favv"
+        android:icon="@drawable/vv4"/>
+    <item android:title="Account"
+        android:id="@+id/acc"
+        android:icon="@drawable/vv5"/>
+</menu>

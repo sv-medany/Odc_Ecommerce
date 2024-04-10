@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.afinal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Final"
+        tools:targetApi="31">
+        <activity
+            android:name=".Congrats"
+            android:exported="false" />
+        <activity
+            android:name=".AccountScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MyCartScreen"
+            android:exported="false" />
+        <activity
+            android:name=".FavoriteScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ItemByCategory"
+            android:exported="false" />
+        <activity
+            android:name=".ExploreScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ProductView"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false"></activity>
+        <activity
+            android:name=".SignUpScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LocationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LogingScreen"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".FacebookAuth"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Verification"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".Number"
+            android:exported="false" />
+        <activity
+            android:name=".SingIn"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".OnBoardingScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+    </application>
+
+</manifest>

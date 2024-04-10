@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/cartimage"
+                android:layout_width="55dp"
+                android:layout_height="75dp"
+                android:src="@drawable/coke"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:layout_weight="6">
+
+                <TextView
+                    android:id="@+id/coketitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diet Coke"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/cokedes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="380 ml"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="2"
+                    android:gravity="left">
+                    <ImageButton
+                        android:layout_width="17dp"
+                        android:layout_height="5dp"
+                        android:id="@+id/minus"
+                        android:src="@drawable/minus"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/white"/>
+                    <TextView
+                        android:layout_width="45.6dp"
+                        android:layout_height="45.6dp"
+                        android:id="@+id/quantity"
+                        android:text="1"
+                        android:gravity="center"
+                        />
+                    <ImageButton
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:id="@+id/add"
+                        android:src="@drawable/plus"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/remove"
+                    android:src="@drawable/remove"
+                    android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/cokeprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1.99"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

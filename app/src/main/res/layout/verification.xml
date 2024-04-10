@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recc2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="Enter your 6 digit code"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="25dp"
+            android:text="Code"
+            android:textColor="@color/grey"
+            android:textSize="16sp" />
+
+
+
+            <com.chaos.view.PinView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:itemCount="6"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:inputType="number"
+                app:hideLineWhenFilled="true"
+                app:cursorColor="@color/black"
+                android:id="@+id/verification_code"/>
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+    android:orientation="horizontal">
+    <TextView
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        android:layout_weight="1"
+        android:translationY="24dp"
+        android:layout_marginStart="24dp"
+        android:id="@+id/resend_code"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/verification_code_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:translationY="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:background="@color/white"
+            android:backgroundTint="@color/green"
+            android:onClick="callNextScreenFromOtp"
+            android:contentDescription="submit"
+            android:layout_margin="16dp" />
+</LinearLayout>
+</RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
